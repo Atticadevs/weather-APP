@@ -2,7 +2,6 @@ let weatherintervalID=null;
 async function getData(name)
 { 
     try{
-    // let name='multan'
     const urlApi=`https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=0effba0acf23a347de5cff8b64169565&units=metric`;
     const response=await fetch(urlApi);
     if(!response.ok)
